@@ -11,11 +11,11 @@
 
 ###
 
-<p align="left">✨ Creating bugs since mySpace was popular<br>📚 I'm currently learning Javascript and expanding knowledge of HTML/CSS <br>🎯 Goals: Create multiple streams of income, become a business owner, travel regularly, and balance work with many hobbies.<br>🎲 Fun fact: I rock climb and slack line. </p>
+<p align="left">✨ Creating bugs since mySpace was popular<br>📚 I'm currently learning Javascript and expanding my knowledge of HTML/CSS <br>🎯 Goals: Create multiple streams of income, become a business owner, travel regularly, and balance work with many hobbies.<br>🎲 Fun fact: I rock climb and slack line. </p>
 
 ###
 
-<h2 align="left">I code </h2>
+<h2 align="left">I code with</h2>
 
 ###
 
