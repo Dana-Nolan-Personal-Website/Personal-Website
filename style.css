@@ -1,6 +1,7 @@
 body {
     color:#876445;
     
+    
 }
 .header {
     height: 8em;
@@ -8,12 +9,10 @@ body {
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
-}
-
-.center {
     display: flex;
     align-items: center;
-}
+  }
+
 
 nav {
     position: sticky;
@@ -53,15 +52,6 @@ main {
     flex-direction: column;
 
 }
-/* additional main
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-}*/
-
 
 .hero-main {
     display: grid;
@@ -77,22 +67,16 @@ main {
 }
 
 .nameplate {
-    /* background-color: #CA965C; 
-    border-style: solid; */
     max-width: fit-content;
     font-size: 30px;
 }
  
 .hero-statement {
-    /* background-color: #EEC373;
-    border-style: solid; */
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .hero-sum {
-    /* background-color: #F4DFBA;
-    border-style: solid; */
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .intro-img {
@@ -153,7 +137,8 @@ h3 {
 .about {
     flex-direction: column;
 }
-  /* Timeline Container */
+
+/* Timeline Container */
   .timeline {
     background: transparent;
     margin: 20px auto;
@@ -279,3 +264,32 @@ h3 {
 .projects {
     text-align: center;
 }
+
+.contact {
+  background-image: url(flowers.JPG);
+  background-size: cover;
+  margin: 0;
+}
+
+main > .contact-text {
+  margin: 5% auto;
+  width: 40%;
+  background-color: #F4DFBA;
+}
+
+#contact-title {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.contact-form {
+  margin: 5% auto;
+  padding: 20px; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+}
+
