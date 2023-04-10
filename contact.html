@@ -1,14 +1,49 @@
-<h2>Collaborate With Me</h2>
-<section class="contact-form">
-    <form action="" method="POST" id="form">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" placholder="First Name">
-        <label for="lastname">Last Name</label>
+<!-- contact page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana Nolan</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Staatliches&family=Outfit&family=Rock+Salt">
+</head>
+
+<body>
+    <header class="header center">
+       <h2>Hey Dane</h2>
+    <!-- navbar -->
+    <nav>
+        <ul class="navigation center">
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="about.html" class="navlink">About</a></li>
+            <li><a href="portfolio.html" class="navlink">Portfolio</a></li>
+            <li><a href="contact.html" class="navlink">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+<main class="contact">
+
+    <section class="contact-text">
+        <section class="contact-form">
+        <h2 id="contact-title">Collaborate With Me</h2>
+        <form action="" method="POST" id="form">
+        <label for="firstname"></label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+        <label for="lastname"></label>
         <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-        <label for="email">Email Address</label>
+        <label for="email"></label>
         <input type="text" name="email" id="email" placeholder="Email Address">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="15" cols="100">Provide a detail request for more information, collaboration, or just to say "hey". </textarea>
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="10%">How can we connect today?</textarea>
         <input type="submit" value="Submit" id="submit">
-    </form>
-</section>
+        </form>
+        </section>
+    </section>
+</main>
+<script src="contactsubmit.js"></script>
+</body>
+</html>
