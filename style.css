@@ -202,15 +202,15 @@ h3 {
   .info {
     display: flex;
     flex-direction: column;
-    background:#876445;
-    color:#CA965C;
+    background:hsl(6, 74%, 70%, 80%);
+    color:#876445;
     border-radius: 10px;
     padding: 10px;
   }
   
   /* Title of the card */
   .title {
-    color: #eb867b;
+    color: #876445;
     position: relative;
   }
   
@@ -277,7 +277,7 @@ main > .contact-text {
 
 #contact-title {
   text-align: center;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 .contact-form {
@@ -291,6 +291,20 @@ form {
   font-family: "Outfit", sans-serif;
 }
 
-input {
+input, textarea {
   margin-bottom: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+input[type=button],
+input[type=submit] {
+        background-color: #eb867b;
+        border: none;
+        color: #F4DFBA;
+        padding: 10px 30px;
+        text-decoration:none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 3vh;
+        font-family: "Outfit", sans-serif;
 }
