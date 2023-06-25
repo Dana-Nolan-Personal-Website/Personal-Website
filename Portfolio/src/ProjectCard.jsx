@@ -4,16 +4,17 @@ const ProjectCard = ({ project }) => {
   const { title, description, imageURL } = project;
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4">
-      <img
-        className="w-full h-48 object-cover mb-4"
-        src={imageURL}
-        alt={title}
-      />
-      <h2 className="text-xl font-bold mb-2">{title}</h2>
-      <p className="text-gray-700">{description}</p>
+    <div className="card">
+      <img src={imageURL} alt={title} />
+      <div className="card-content">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <a href="#" className="card-button">
+          Find out more
+          <span class="symbols">arrow_right_alt</span>
+        </a>
+      </div>
     </div>
   );
 };
-
 export default ProjectCard;
