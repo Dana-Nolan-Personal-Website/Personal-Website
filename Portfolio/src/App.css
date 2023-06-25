@@ -1,19 +1,35 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .card {
-  width: 24rem;
-  height: 36rem;
+  width: 380px;
+  height: 520px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: #ffffff;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 40px;
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from the last card to avoid extra spacing */
+}
+
+.portfolio-body {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-hd {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 img {
@@ -54,22 +70,40 @@ a {
   text-decoration: none;
 }
 
-:hover h2 {
+.card-hovered h2 {
+  font-size: 30px;
   inset: auto auto 220px 30px;
   transition: inset 0.3s ease-out;
 }
 
-:hover p,
-:hover a {
+.card-hovered p,
+.card-hovered a {
+  font-size: 25px;
   opacity: 1;
   transition: opacity 0.5s 0.1s ease-in;
 }
 
-:hover img {
-  transition: opacity 0.3s ease=in;
+.card-hovered img {
+  transition: opacity 0.3s ease-in;
   opacity: 1;
 }
 
-.symbols {
-  vertical-align: middle;
+.content-hovered {
+  background-color: rgba(235, 134, 123, 0.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Add this line to fill the entire div */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .content-hovered {
+  opacity: 1;
 }

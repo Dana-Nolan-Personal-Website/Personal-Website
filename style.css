@@ -1,81 +1,77 @@
 /* for every page */
 body {
-  color:#876445;
-  margin: 0; 
-    
+  color: #876445;
+  margin: 0;
 }
 
 .header {
-    height: 8em;
-    max-width: 1100px;
-    width: 95%;
-    margin: 0 auto;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-  }
-
+  height: 8em;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
 
 nav {
-    position: sticky;
-    z-index: 1;
-    display: flex;
-    margin-right: 1.5em;
-
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  margin-right: 1.5em;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1.9rem;
-    font-family: "Staatliches", sans-serif;
-    font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  gap: 1.9rem;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
 }
 
 a:link {
-    color: #eba655;
+  color: #eba655;
 }
 
 a:visited {
-    color: #eba655;
+  color: #eba655;
 }
 
 a:hover {
-    color: #eb867b;
+  color: #eb867b;
 }
 
 p {
-    font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* index/home page */
 main {
-    margin: 30px 30px 30px 30px;
-    padding: 10px 20px 10px 10px;
-    display: flex;
-    flex-direction: column;
-
+  margin: 30px 30px 30px 30px;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    margin: auto 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: auto 5%;
 }
 
 .intro-text {
-    display: grid;
-    flex-direction: column;
-    position: relative;
-    justify-items: center
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  justify-items: center;
 }
 
 .nameplate {
-    max-width: fit-content;
-    font-size: 50px;
+  max-width: fit-content;
+  font-size: 50px;
 }
- 
+
 .hero-statement {
   max-width: 600px;
 }
@@ -85,186 +81,182 @@ main {
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 0 50px;
-    border: solid;
-    border-width: 10px;
-    border-color: #eb867b;
-    
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0 50px;
+  border: solid;
+  border-width: 10px;
+  border-color: #eb867b;
 }
 
 /* about page */
 .about-header {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-image: url("20200925_005507374_iOS.jpg");
-    flex-direction: row-reverse;
-    align-items: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: url("20200925_005507374_iOS.jpg");
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .ab-header-text {
-    padding: 5px 15px;
-    background-color: rgb(244,223,186, .8);
-    display: flex; 
-    flex-direction: column;
-    position: relative;
-    right: 5%;
-
+  padding: 5px 15px;
+  background-color: rgb(244, 223, 186, 0.8);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 5%;
 }
 
 h2 {
-    font-family: "Caveat", serif;
-    font-size: 35px;
+  font-family: "Caveat", serif;
+  font-size: 35px;
 }
 
 h3 {
-    font-family: "Staatliches", sans-serif;
-    font-size: 30px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
 }
-
 
 .history {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
- 
+
 .about {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 /* Timeline Container */
-  .timeline {
-    background: transparent;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  /* Card container */
-  .card {
-    position: relative;
-    max-width: 400px;
-  }
-  
-  /* setting padding based on even or odd */
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-  }
-  .card:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
-  /* Global ::before */
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    border: solid #eb867b;
-  }
-  
-  /* Setting the border of top, bottom, left */
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  /* Setting the border of top, bottom, right */
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
-  }
-  
-  /* Removing the border if it is the first card */
-  .card:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's odd */
-  .card:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's even */
-  .card:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  /* Information about the timeline */
-  .info {
-    display: flex;
-    flex-direction: column;
-    background:hsl(6, 74%, 70%, 80%);
-    color:#876445;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  /* Title of the card */
-  .title {
-    color: #876445;
-    position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #F4DFBA;
-    border-radius: 999px;
-    border: 3px solid #eb867b;
-  }
-  
-  /* text right if the card is even  */
-  .card:nth-child(even) > .info > .title {
-    text-align: right;
-  }
-  
-  /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
-    left: -45px;
-  }
-  
-  /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
-    right: -45px;
-  }
+.timeline {
+  background: transparent;
+  margin: 20px auto;
+  padding: 20px;
+}
 
+/* Card container */
+.card {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid #eb867b;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: hsl(6, 74%, 70%, 80%);
+  color: #876445;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: #876445;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f4dfba;
+  border-radius: 999px;
+  border: 3px solid #eb867b;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
 
 /* portfolio page */
 .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 10px;
-  }
-  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+}
+
 .grid-item {
-    background-color: rgb(244,223,186, .8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    margin-inline: 15px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    text-align: center;
-    font-family: "Outfit", sans-serif
+  background-color: rgb(244, 223, 186, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-inline: 15px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
 }
 
 .projects {
-    text-align: center;
+  text-align: center;
 }
 
 /* contact page */
@@ -279,7 +271,7 @@ main > .contact-text {
   position: relative;
   margin: 0% auto;
   width: 40%;
-  background-color: #F4DFBA;
+  background-color: #f4dfba;
 }
 
 #contact-title {
@@ -289,7 +281,7 @@ main > .contact-text {
 
 .contact-form {
   margin: 25% auto;
-  padding: 25px 30px; 
+  padding: 25px 30px;
 }
 
 form {
@@ -298,21 +290,22 @@ form {
   font-family: "Outfit", sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 10px;
   font-family: "Outfit", sans-serif;
 }
 
-input[type=button],
-input[type=submit] {
-        background-color: #eb867b;
-        border: none;
-        color: #F4DFBA;
-        padding: 10px 30px;
-        text-decoration:none;
-        margin: 4px 2px;
-        cursor: pointer;
-        font-size: 3vh;
-        font-family: "Outfit", sans-serif;
-        border-radius: 40%;
+input[type="button"],
+input[type="submit"] {
+  background-color: #eb867b;
+  border: none;
+  color: #f4dfba;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 3vh;
+  font-family: "Outfit", sans-serif;
+  border-radius: 40%;
 }
