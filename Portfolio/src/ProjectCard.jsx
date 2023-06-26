@@ -21,8 +21,8 @@ const ProjectCard = ({ project }) => {
     >
       <img src={imageURL} alt={title} />
       <div className="card-content">
+        <h2>{title}</h2>
         <div className="content-hovered">
-          <h2>{title}</h2>
           <p>{description}</p>
           <a href="#" className="card-button">
             Find out more
